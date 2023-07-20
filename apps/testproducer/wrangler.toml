@@ -1,0 +1,9 @@
+name = "testproducer"
+main = "src/index.ts"
+compatibility_date = "2023-05-05"
+node_compat = true
+workers_dev = true
+
+[[queues.producers]]
+  queue = "test"
+  binding = "QUEUE"

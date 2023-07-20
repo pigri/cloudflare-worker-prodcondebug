@@ -1,0 +1,12 @@
+name = "testconsumer"
+main = "src/index.ts"
+compatibility_date = "2023-05-05"
+node_compat = true
+workers_dev = true
+
+[[queues.consumers]]
+  queue = "test"
+  max_batch_size = 100
+  max_batch_timeout = 30
+  dead_letter_queue = "dlq-test"
+
